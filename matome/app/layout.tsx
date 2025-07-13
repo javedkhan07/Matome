@@ -5,6 +5,7 @@ import Header from "@/components/common/header";
 import Footer from "@/components/common/footer";
 import { ClerkProvider } from "@clerk/nextjs";
 
+
 const fontSans = FontSans({
   variable: "--font-sans",
   subsets: ["latin"],
@@ -30,6 +31,7 @@ export default function RootLayout({
             <main className="flex-1"> {children} </main>
             <Footer />
           </div>
+          
         </body>
       </html>
     </ClerkProvider>
